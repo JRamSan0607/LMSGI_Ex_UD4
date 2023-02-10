@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="personas.xsd" type="application/xml-xsd"?>
+<personas>
+    <persona>
+        <nombre>Eva</nombre>
+        <ciudad>París</ciudad>
+        <edad>25</edad>
+        <cadena>Eva vive en París y tiene 25 años.</cadena>
+    </persona>
+    <persona>
+        <nombre>Giovanni</nombre>
+        <ciudad>Florencia</ciudad>
+        <edad>26</edad>
+        <cadena>Giovanni vive en Florencia y tiene 26 años.</cadena>
+    </persona>
+</personas>
