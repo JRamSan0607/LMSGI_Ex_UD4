@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="losRemediosSA">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="sucursales">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="sucursal">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="departamentoExposicion">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="pedidos">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="pedido"
+                                                                    maxOccurs="unbounded">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element
+                                                                                name="codSucursal"
+                                                                                type="xs:string" />
+                                                                            <xs:element
+                                                                                name="nombreEmpleado"
+                                                                                type="xs:string" />
+                                                                            <xs:element
+                                                                                name="fechaPedido"
+                                                                                type="xs:string" />
+                                                                            <xs:element
+                                                                                name="observacionesPedido"
+                                                                                type="xs:string" />
+                                                                            <xs:element
+                                                                                name="articulo">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element
+                                                                                            name="codArticulo"
+                                                                                            type="xs:string" />
+                                                                                        <xs:element
+                                                                                            name="numeroUnidades"
+                                                                                            type="xs:string" />
+                                                                                        <xs:element
+                                                                                            name="precioUnidad"
+                                                                                            type="xs:string" />
+                                                                                        <xs:element
+                                                                                            name="observacionesArticulo"
+                                                                                            type="xs:string" />
+                                                                                        <xs:element
+                                                                                            name="plazoRevision"
+                                                                                            type="xs:string" />
+                                                                                    </xs:sequence>
+                                                                                    <xs:attribute
+                                                                                        name="id"
+                                                                                        type="xs:integer"
+                                                                                        use="required" />
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                        <xs:attribute name="id"
+                                                                            type="xs:integer"
+                                                                            use="required" />
+                                                                        <xs:attribute
+                                                                            name="articulo"
+                                                                            type="xs:integer"
+                                                                            use="required" />
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="departamentoGestion">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="albaranPedido"
+                                                        maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="estadoPedido"
+                                                                    type="xs:string" />
+                                                            </xs:sequence>
+                                                            <xs:attribute name="id"
+                                                                type="xs:integer" use="required" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="pagoPedido"
+                                                        maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="pagoRealizado"
+                                                                    type="xs:string" />
+                                                            </xs:sequence>
+                                                            <xs:attribute name="id"
+                                                                type="xs:integer" use="required" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

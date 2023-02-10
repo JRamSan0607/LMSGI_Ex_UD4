@@ -1,0 +1,26 @@
+<!ELEMENT losRemediosSA (sucursales)>
+<!ELEMENT sucursales (sucursal)>
+<!ELEMENT sucursal (departamentoExposicion,departamentoGestion)>
+<!ELEMENT departamentoExposicion (pedidos)>
+<!ELEMENT pedidos (pedido+)>
+<!ELEMENT pedido (codSucursal,nombreEmpleado,fechaPedido,observacionesPedido,articulo)>
+<!ATTLIST pedido id NMTOKEN #REQUIRED>
+<!ATTLIST pedido articulo NMTOKEN #REQUIRED>
+<!ELEMENT codSucursal (#PCDATA)>
+<!ELEMENT nombreEmpleado (#PCDATA)>
+<!ELEMENT fechaPedido (#PCDATA)>
+<!ELEMENT observacionesPedido (#PCDATA)>
+<!ELEMENT articulo (codArticulo,numeroUnidades,precioUnidad,observacionesArticulo,plazoRevision)>
+<!ATTLIST articulo id NMTOKEN #REQUIRED>
+<!ELEMENT codArticulo (#PCDATA)>
+<!ELEMENT numeroUnidades (#PCDATA)>
+<!ELEMENT precioUnidad (#PCDATA)>
+<!ELEMENT observacionesArticulo (#PCDATA)>
+<!ELEMENT plazoRevision (#PCDATA)>
+<!ELEMENT departamentoGestion (albaranPedido+,pagoPedido+)>
+<!ELEMENT albaranPedido (estadoPedido)>
+<!ATTLIST albaranPedido id NMTOKEN #REQUIRED>
+<!ELEMENT estadoPedido (#PCDATA)>
+<!ELEMENT pagoPedido (pagoRealizado)>
+<!ATTLIST pagoPedido id NMTOKEN #REQUIRED>
+<!ELEMENT pagoRealizado (#PCDATA)>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="losRemediosSA.dtd" type="application/xml-dtd"?>
+<losRemediosSA>
+    <sucursales>
+        <sucursal>
+            <departamentoExposicion>
+                <pedidos>
+                    <pedido id="1" articulo="1">
+                        <codSucursal>B378-4384</codSucursal>
+                        <nombreEmpleado>Luis Guerra Jiménez</nombreEmpleado>
+                        <fechaPedido>10/02/2023</fechaPedido>
+                        <observacionesPedido>Frágil. No dar golpes.</observacionesPedido>
+                        <articulo id="1">
+                            <codArticulo>HJR-394</codArticulo>
+                            <numeroUnidades>12</numeroUnidades>
+                            <precioUnidad>6.78€</precioUnidad>
+                            <observacionesArticulo>Vasos de Cristal. Frágil.</observacionesArticulo>
+                            <plazoRevision>1 días</plazoRevision>
+                        </articulo>
+                    </pedido>
+                    <pedido id="2" articulo="2">
+                        <codSucursal>H378-4893</codSucursal>
+                        <nombreEmpleado>Juan García Lorca</nombreEmpleado>
+                        <fechaPedido>10/02/2023</fechaPedido>
+                        <observacionesPedido>Realizar entrega en casa abajo derecha.</observacionesPedido>
+                        <articulo id="2">
+                            <codArticulo>JKR-894</codArticulo>
+                            <numeroUnidades>2</numeroUnidades>
+                            <precioUnidad>23.67€</precioUnidad>
+                            <observacionesArticulo>Tira de luces LED mando remoto.</observacionesArticulo>
+                            <plazoRevision>2 días</plazoRevision>
+                        </articulo>
+                    </pedido>
+                    <pedido id="3" articulo="3">
+                        <codSucursal>U374-2893</codSucursal>
+                        <nombreEmpleado>Michael Jaén Vega</nombreEmpleado>
+                        <fechaPedido>10/02/2023</fechaPedido>
+                        <observacionesPedido>Embalaje burbuja.</observacionesPedido>
+                        <articulo id="3">
+                            <codArticulo>QLE-922</codArticulo>
+                            <numeroUnidades>1</numeroUnidades>
+                            <precioUnidad>36.99€</precioUnidad>
+                            <observacionesArticulo>Pieza coleccionista Marvel. No dañar embalaje.</observacionesArticulo>
+                            <plazoRevision>2 días</plazoRevision>
+                        </articulo>
+                    </pedido>
+                </pedidos>
+            </departamentoExposicion>
+            <departamentoGestion>
+                <albaranPedido id="1">
+                    <estadoPedido>Entregado</estadoPedido>
+                </albaranPedido>
+                <albaranPedido id="2">
+                    <estadoPedido>En revisión</estadoPedido>
+                </albaranPedido>
+                <albaranPedido id="3">
+                    <estadoPedido>En reparto</estadoPedido>
+                </albaranPedido>
+                <pagoPedido id="1">
+                    <pagoRealizado>Si</pagoRealizado>
+                </pagoPedido>
+                <pagoPedido id="2">
+                    <pagoRealizado>No</pagoRealizado>
+                </pagoPedido>
+                <pagoPedido id="3">
+                    <pagoRealizado>Si</pagoRealizado>
+                </pagoPedido>
+            </departamentoGestion>
+        </sucursal>
+    </sucursales>
+</losRemediosSA>
