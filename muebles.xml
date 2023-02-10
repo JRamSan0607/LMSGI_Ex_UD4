@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="muebles.xsd" type="application/xml-xsd"?>
+<muebles>
+   <mueble tipoColorMueble="blanco" tipoMueble="mesa"></mueble>
+   <mueble tipoColorMueble="gris" tipoMueble="silla"></mueble>
+</muebles>
